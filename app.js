@@ -1,6 +1,5 @@
 function onLoad() {
   generatePricesTable();
-
 }
 
   return countries[countryName].beer;
