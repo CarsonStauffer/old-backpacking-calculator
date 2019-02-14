@@ -3,8 +3,8 @@ function onLoad() {
 
 }
 
-function calculateTotal(countryName) {
   return countries[countryName].beer;
+function calculatePrice(countryName) {
 }
 
 function clearTable() {
@@ -12,7 +12,7 @@ function clearTable() {
 }
 
 function generatePricesRow(countryName) {
-  return '<tr><td>' + countryName + '</td><td>$' + calculateTotal(countryName) + '/day</td></tr>';
+  return '<tr><td>' + countryName + '</td><td>$' + calculatePrice(countryName) + '/day</td></tr>';
 }
 
 function generatePricesTable() {
