@@ -20,7 +20,7 @@ function clearTable() {
 }
 
 function generatePricesRow(countryName) {
-  return '<tr><td>' + countryName + '</td><td>$' + calculatePrice(countryName) + '/day</td></tr>';
+  return '<tr><td>' + countryName + '</td><td>$' + Math.round(calculatePrice(countryName)) + '/day</td></tr>';
 }
 
 function generatePricesTable() {
