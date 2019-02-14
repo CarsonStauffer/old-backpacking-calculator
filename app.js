@@ -1,9 +1,18 @@
+preferences = {
+  "accommodation": "hostel",
+  "food": "street food"
+}
+
 function onLoad() {
   generatePricesTable();
 }
 
-  return countries[countryName].beer;
 function calculatePrice(countryName) {
+  var price = 0;
+  price += countries[countryName][preferences.accommodation];
+  price += countries[countryName][preferences.food];
+  price += countries[countryName].beer;
+  return price;
 }
 
 function clearTable() {
@@ -24,4 +33,22 @@ function generatePricesTable() {
   tbody.append(generatePricesRow("laos"));
   tbody.append(generatePricesRow("malaysia"));
   tbody.append(generatePricesRow("indonesia"));
+}
+
+function setPreference(preference) {
+  switch(preference) {
+    case 'hostel':
+      preferences.accommodation = "hostel";
+      break;
+    case 'hotel':
+      preferences.accommodation = "hotel";
+      break;
+    case 'street food':
+      preferences.food = "street food";
+      break;
+    case 'cheap restaurants':
+      preferences.food = "cheap restaurants";
+      break;
+  }
+  generatePricesTable();
 }
