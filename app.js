@@ -54,7 +54,7 @@ function setPreference(preference) {
       preferences.food = "cheap restaurants";
       break;
     case 'party':
-      preferences.party = $('input[type="range"]').val();
+      preferences.party = parseInt($('input[type="range"]').val());
       break;
   }
   generatePricesTable();
