@@ -2,9 +2,11 @@
 
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="lib/rangeslider.min.js"></script>
 	<script language="javascript" type="text/javascript" src="countries.js"></script>
 	<script language="javascript" type="text/javascript" src="app.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="lib/rangeslider.css">
 </head>
 
 <body onload="onLoad()">
@@ -18,5 +20,15 @@
 <button type="button" onclick="setPreference('hotel')">Hotel</button>
 <button type="button" onclick="setPreference('street food')">Street Food</button>
 <button type="button" onclick="setPreference('cheap restaurants')">Cheap Restaurants</button>
+<input
+    type="range"
+    min="0"
+    max="2"
+    step="1"
+    value="1"
+    data-orientation="horizontal"
+		onChange="setPreference('party')"
+		onInput="setPreference('party')"
+>
 
 </html>

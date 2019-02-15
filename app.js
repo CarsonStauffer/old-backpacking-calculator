@@ -1,6 +1,7 @@
 preferences = {
   "accommodation": "hostel",
-  "food": "street food"
+  "food": "street food",
+  "party": 1
 }
 
 function onLoad() {
@@ -11,7 +12,7 @@ function calculatePrice(countryName) {
   var price = 0;
   price += countries[countryName][preferences.accommodation];
   price += countries[countryName][preferences.food];
-  price += countries[countryName].beer;
+  price += countries[countryName].beer * preferences.party;
   return price;
 }
 
@@ -49,6 +50,9 @@ function setPreference(preference) {
       break;
     case 'cheap restaurants':
       preferences.food = "cheap restaurants";
+      break;
+    case 'party':
+      preferences.party = $('input[type="range"]').val();
       break;
   }
   generatePricesTable();
