@@ -5,7 +5,7 @@ countries = {
     "cheap restaurants": 3,
     "hostel": 4,
     "hotel": 10,
-    "beer": 0.72
+    "beer": 1
   },
 
   "indonesia":
@@ -19,7 +19,7 @@ countries = {
 
   "laos":
   {
-    "street food": 3.5,
+    "street food": 2.8,
     "cheap restaurants": 6,
     "hostel": 5,
     "hotel": 12.5,
@@ -30,23 +30,23 @@ countries = {
   {
     "street food": 2,
     "cheap restaurants": 4.4,
-    "hostel": 7,
-    "hotel": 17.5,
-    "beer": 1.47
+    "hostel": 9,
+    "hotel": 22.5,
+    "beer": 2.3
   },
 
   "philippines":
   {
-    "street food": 1.5,
+    "street food": 2.3,
     "cheap restaurants": 3.83,
     "hostel": 9,
     "hotel": 22.5,
-    "beer": 1.5
+    "beer": 1.2
   },
 
   "singapore":
   {
-    "street food": 4,
+    "street food": 5,
     "cheap restaurants": 10,
     "hostel": 15,
     "hotel": 37.5,
@@ -59,7 +59,7 @@ countries = {
     "cheap restaurants": 6.39,
     "hostel": 11,
     "hotel": 27.5,
-    "beer": 2.87
+    "beer": 1.2
   },
 
   "vietnam":
