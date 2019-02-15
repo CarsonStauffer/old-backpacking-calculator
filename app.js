@@ -13,7 +13,16 @@ function calculatePrice(countryName) {
   var miscFactor = 1.13;
   price += countries[countryName][preferences.accommodation];
   price += countries[countryName][preferences.food]*3;
-  price += countries[countryName].beer * preferences.party;
+  switch(preferences.party) {
+    case 0:
+      break;
+    case 1:
+      price += countries[countryName].beer * 2;
+      break;
+    case 2:
+      price += countries[countryName].beer * 6;
+      break;
+  }
   price *= miscFactor;
   return price;
 }
