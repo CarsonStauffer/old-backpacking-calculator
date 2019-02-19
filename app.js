@@ -27,12 +27,16 @@ function calculatePrice(countryName) {
   return price;
 }
 
+function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function clearTable() {
   $("#prices tr").remove();
 }
 
 function generatePricesRow(countryName) {
-  return '<tr><td>' + countryName + '</td><td>$' + Math.round(calculatePrice(countryName)) + '/day</td></tr>';
+  return '<tr><td>' + capitalize(countryName) + '</td><td>$' + Math.round(calculatePrice(countryName)) + '/day</td></tr>';
 }
 
 function generatePricesTable() {
