@@ -11,8 +11,6 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#333333;
-	font-family:Arial;
-	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
@@ -45,4 +43,10 @@
 .toggleButton:focus {
   outline: none;
   border:2px solid #ffaa22;
+}
+
+* {
+  font-weight: bold;
+  font-size: 6vh;
+  font-family: 'Patrick Hand', cursive;
 }
