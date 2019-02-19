@@ -52,15 +52,23 @@ function setPreference(preference) {
   switch(preference) {
     case 'hostel':
       preferences.accommodation = "hostel";
+      $("#hostel").addClass("selected");
+      $("#hotel").removeClass("selected");
       break;
     case 'hotel':
       preferences.accommodation = "hotel";
+      $("#hotel").addClass("selected");
+      $("#hostel").removeClass("selected");
       break;
     case 'street food':
       preferences.food = "street food";
+      $("#streetFood").addClass("selected");
+      $("#cheapRestaurants").removeClass("selected");
       break;
     case 'cheap restaurants':
       preferences.food = "cheap restaurants";
+      $("#cheapRestaurants").addClass("selected");
+      $("#streetFood").removeClass("selected");
       break;
     case 'party':
       preferences.party = parseInt($('input[type="range"]').val());
