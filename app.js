@@ -1,5 +1,5 @@
 preferences = {
-  "accommodation": "hostel",
+  "accommodation": "hostels",
   "food": "street food",
   "party": 1
 }
@@ -50,15 +50,15 @@ function generatePricesTable() {
 
 function setPreference(preference) {
   switch(preference) {
-    case 'hostel':
-      preferences.accommodation = "hostel";
-      $("#hostel").addClass("selected");
-      $("#hotel").removeClass("selected");
+    case 'hostels':
+      preferences.accommodation = "hostels";
+      $("#hostels").addClass("selected");
+      $("#hotels").removeClass("selected");
       break;
-    case 'hotel':
-      preferences.accommodation = "hotel";
-      $("#hotel").addClass("selected");
-      $("#hostel").removeClass("selected");
+    case 'hotels':
+      preferences.accommodation = "hotels";
+      $("#hotels").addClass("selected");
+      $("#hostels").removeClass("selected");
       break;
     case 'street food':
       preferences.food = "street food";

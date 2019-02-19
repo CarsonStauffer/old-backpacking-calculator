@@ -3,8 +3,8 @@ countries = {
   {
     "street food": 1.5,
     "cheap restaurants": 3,
-    "hostel": 4,
-    "hotel": 10,
+    "hostels": 4,
+    "hotels": 10,
     "beer": 1
   },
 
@@ -12,8 +12,8 @@ countries = {
   {
     "street food": 2.21,
     "cheap restaurants": 7.49,
-    "hostel": 10,
-    "hotel": 25,
+    "hostels": 10,
+    "hotels": 25,
     "beer": 1.1
   },
 
@@ -21,8 +21,8 @@ countries = {
   {
     "street food": 2.8,
     "cheap restaurants": 6,
-    "hostel": 5,
-    "hotel": 12.5,
+    "hostels": 5,
+    "hotels": 12.5,
     "beer": 1
   },
 
@@ -30,8 +30,8 @@ countries = {
   {
     "street food": 2,
     "cheap restaurants": 4.4,
-    "hostel": 9,
-    "hotel": 22.5,
+    "hostels": 9,
+    "hotels": 22.5,
     "beer": 2.3
   },
 
@@ -39,8 +39,8 @@ countries = {
   {
     "street food": 2.3,
     "cheap restaurants": 3.83,
-    "hostel": 9,
-    "hotel": 22.5,
+    "hostels": 9,
+    "hotels": 22.5,
     "beer": 1.2
   },
 
@@ -48,8 +48,8 @@ countries = {
   {
     "street food": 5,
     "cheap restaurants": 10,
-    "hostel": 15,
-    "hotel": 37.5,
+    "hostels": 15,
+    "hotels": 37.5,
     "beer": 2.1
   },
 
@@ -57,8 +57,8 @@ countries = {
   {
     "street food": 1.28,
     "cheap restaurants": 6.39,
-    "hostel": 11,
-    "hotel": 27.5,
+    "hostels": 11,
+    "hotels": 27.5,
     "beer": 1.2
   },
 
@@ -66,8 +66,8 @@ countries = {
   {
     "street food": 1.3,
     "cheap restaurants": 4.33,
-    "hostel": 7,
-    "hotel": 17.5,
+    "hostels": 7,
+    "hotels": 17.5,
     "beer": 0.95
   }
 }
