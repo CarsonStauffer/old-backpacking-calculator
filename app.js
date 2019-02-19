@@ -76,6 +76,17 @@ function setPreference(preference) {
       break;
     case 'party':
       preferences.party = parseInt($('input[type="range"]').val());
+      switch(preferences.party) {
+        case 0:
+          $("#partyLevel").text("I'm always sober");
+          break;
+        case 1:
+          $("#partyLevel").text("Light drinker");
+          break;
+        case 2:
+          $("#partyLevel").text("Won't remember the trip");
+          break;
+      }
       break;
   }
   generatePricesTable();
