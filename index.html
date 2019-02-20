@@ -11,26 +11,32 @@
 </head>
 
 <body onload="onLoad()">
-	<table id="prices">
-		<tbody>
-		</tbody>
-	</table>
+	<div class="grid-container">
+		<div class="grid-row">
+			<table id="prices">
+				<tbody>
+				</tbody>
+			</table>
+		</div>
 
-	<button type="button" id="hostels" class="toggleButton selected" onclick="setPreference('hostels')">Hostels</button>
-	<button type="button" id="hotels" class="toggleButton" onclick="setPreference('hotels')">Hotels</button>
-	<button type="button" id="streetFood" class="toggleButton selected" onclick="setPreference('street food')">Street Food</button>
-	<button type="button" id="cheapRestaurants" class="toggleButton" onclick="setPreference('cheap restaurants')">Cheap Restaurants</button>
-	<input
-	    type="range"
-	    min="0"
-	    max="2"
-	    step="1"
-	    value="1"
-	    data-orientation="horizontal"
-			onChange="setPreference('party')"
-			onInput="setPreference('party')"
-	>
-	<div id="partyLevel">TODO: party level</div>
+
+
+		<button type="button" id="hostels" class="toggleButton selected" onclick="setPreference('hostels')">Hostels</button>
+		<button type="button" id="hotels" class="toggleButton" onclick="setPreference('hotels')">Hotels</button>
+		<button type="button" id="streetFood" class="toggleButton selected" onclick="setPreference('street food')">Street Food</button>
+		<button type="button" id="cheapRestaurants" class="toggleButton" onclick="setPreference('cheap restaurants')">Cheap Restaurants</button>
+		<input
+		    type="range"
+		    min="0"
+		    max="2"
+		    step="1"
+		    value="1"
+		    data-orientation="horizontal"
+				onChange="setPreference('party')"
+				onInput="setPreference('party')"
+		>
+		<div id="partyLevel">TODO: party level</div>
+	</div>
 </body>
 
 </html>
