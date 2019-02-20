@@ -36,7 +36,7 @@ function clearTable() {
 }
 
 function generatePricesRow(countryName) {
-  return '<tr><td>' + capitalize(countryName) + '</td><td>$' + Math.round(calculatePrice(countryName)) + '/day</td></tr>';
+  return '<tr><td>' + capitalize(countryName) + '</td><td>$' + Math.round(calculatePrice(countryName)) + '</td></tr>';
 }
 
 function generatePricesTable() {
