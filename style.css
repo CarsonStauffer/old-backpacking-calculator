@@ -22,6 +22,9 @@
 }
 
 .toggleButton {
+  margin: 1vh 1vw;
+  height: 8vh;
+
 	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
 	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
 	box-shadow: 0px 1px 0px 0px #fff6af;
@@ -68,12 +71,23 @@
   border:2px solid #ffaa22;
 }
 
+
+body {
+  margin: 0;
+}
+button {
+  font-size: 1em;
+}
 h1 {
   margin: 0;
 }
+td {
+  font-size: 2em;
+  text-align: left;
+  padding: 0;
+}
 * {
   font-weight: bold;
-  /* font-size: 6vh; */
-  font-size: calc(1em + 0.5vh);
+  /* font-size: calc(1em + 0.5vh); */
   font-family: 'Patrick Hand', cursive;
 }
