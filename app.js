@@ -74,19 +74,23 @@ function setPreference(preference) {
       $("#cheapRestaurants").addClass("selected");
       $("#streetFood").removeClass("selected");
       break;
-    case 'party':
-      preferences.party = parseInt($('input[type="range"]').val());
-      switch(preferences.party) {
-        case 0:
-          $("#partyLevel").text("I'm always sober");
-          break;
-        case 1:
-          $("#partyLevel").text("Light drinker");
-          break;
-        case 2:
-          $("#partyLevel").text("Won't remember the trip");
-          break;
-      }
+    case 'party0':
+      preferences.party = 0;
+      $("#party0").addClass("selected");
+      $("#party1").removeClass("selected");
+      $("#party2").removeClass("selected");
+      break;
+    case 'party1':
+      preferences.party = 1;
+      $("#party0").removeClass("selected");
+      $("#party1").addClass("selected");
+      $("#party2").removeClass("selected");
+      break;
+    case 'party2':
+      preferences.party = 2;
+      $("#party0").removeClass("selected");
+      $("#party1").removeClass("selected");
+      $("#party2").addClass("selected");
       break;
   }
   generatePricesTable();
