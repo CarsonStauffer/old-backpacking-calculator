@@ -6,6 +6,8 @@ preferences = {
 
 function onLoad() {
   generatePricesTable();
+  window.addEventListener('resize', resize);
+  resize();
 }
 
 function calculatePrice(countryName) {
@@ -35,6 +37,21 @@ function clearTable() {
   $("#prices tr").remove();
 }
 
+function resize() {
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+
+  if(width > height) { // Landscape
+    $("tr").children().each(function(){ $(this).css({'font-size': '3vw'}) });
+    $("h1").css({'font-size': '4vw'});
+    $("button").each(function(){ $(this).css({'font-size': '2vw'}) })
+  } else { // Portrait
+    $("tr").children().each(function(){ $(this).css({'font-size': '5vh'}) });
+    $("h1").css({'font-size': '5vh'});
+    $("button").each(function(){ $(this).css({'font-size': '2.5vh'}) })
+  }
+}
+
 function generatePricesRow(countryName) {
   return '<tr><td>' + capitalize(countryName) + '</td><td>$' + Math.round(calculatePrice(countryName)) + '</td></tr>';
 }
@@ -50,6 +67,7 @@ function generatePricesTable() {
   tbody.append(generatePricesRow("malaysia"));
   tbody.append(generatePricesRow("indonesia"));
   sortTable();
+  resize();
 }
 
 function setPreference(preference) {
