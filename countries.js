@@ -48,8 +48,8 @@ countries = {
   {
     "street food": 5,
     "cheap restaurants": 10,
-    "hostels": 15,
-    "hotels": 37.5,
+    "hostels": 17,
+    "hotels": 40,
     "beer": 2.1
   },
 
