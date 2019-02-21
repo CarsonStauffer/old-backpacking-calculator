@@ -12,7 +12,7 @@ function onLoad() {
 
 function calculatePrice(countryName) {
   var price = 0;
-  var miscFactor = 1.13;
+  var miscFactor = 1.25;
   price += countries[countryName][preferences.accommodation];
   price += countries[countryName][preferences.food]*3;
   switch(preferences.party) {
