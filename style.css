@@ -79,7 +79,7 @@ h1 {
 }
 td {
   text-align: left;
-  padding: 0;
+  padding: 0 5vw;
 }
 * {
   font-weight: bold;
