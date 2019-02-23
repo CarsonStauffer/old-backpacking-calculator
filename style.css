@@ -101,3 +101,11 @@ td {
   font-family: 'Patrick Hand', cursive;
   font-family: 'Varela Round', sans-serif;
 }
+
+#tableContainer {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

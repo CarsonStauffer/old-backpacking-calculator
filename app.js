@@ -45,10 +45,18 @@ function resize() {
     $("tr").children().each(function(){ $(this).css({'font-size': '3vw'}) });
     $("h1").css({'font-size': '4vw'});
     $("button").each(function(){ $(this).css({'font-size': '2vw'}) })
+    $("#tableContainer").addClass("grid-row-half");
+    $("#tableContainer").removeClass("grid-row");
+    $("#controlsContainer").addClass("grid-row-half");
+    $("#controlsContainer").removeClass("grid-row");
   } else { // Portrait
     $("tr").children().each(function(){ $(this).css({'font-size': '5vh'}) });
     $("h1").css({'font-size': '5vh'});
     $("button").each(function(){ $(this).css({'font-size': '2.5vh'}) })
+    $("#tableContainer").addClass("grid-row");
+    $("#tableContainer").removeClass("grid-row-half");
+    $("#controlsContainer").addClass("grid-row");
+    $("#controlsContainer").removeClass("grid-row-half");
   }
 }
 

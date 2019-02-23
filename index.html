@@ -15,19 +15,22 @@
 		<div class="grid-row centered-flex">
 			<h1>Daily Backpacking Budget</h1>
 		</div>
-		<div class="grid-row">
+		<div id="tableContainer" class="grid-row-half">
 			<table id="prices">
 				<tbody>
 				</tbody>
 			</table>
 		</div>
-		<button type="button" id="hostels" class="toggleButton grid-row-half selected" onclick="setPreference('hostels')">Hostels</button>
-		<button type="button" id="hotels" class="toggleButton grid-row-half" onclick="setPreference('hotels')">Hotels</button>
-		<button type="button" id="streetFood" class="toggleButton grid-row-half selected" onclick="setPreference('street food')">Street Food</button>
-		<button type="button" id="cheapRestaurants" class="toggleButton grid-row-half" onclick="setPreference('cheap restaurants')">Cheap Restaurants</button>
-		<button type="button" id="party0" class="toggleButton grid-row-third" onclick="setPreference('party0')">Totally Sober</button>
-		<button type="button" id="party1" class="toggleButton grid-row-third selected" onclick="setPreference('party1')">Occasional Drinker</button>
-		<button type="button" id="party2" class="toggleButton grid-row-third" onclick="setPreference('party2')">Party Animal</button>
+		<div id="controlsContainer" class="grid-container grid-row-half">
+				<button type="button" id="hostels" class="toggleButton grid-row-half selected" onclick="setPreference('hostels')">Hostels</button>
+				<button type="button" id="hotels" class="toggleButton grid-row-half" onclick="setPreference('hotels')">Hotels</button>
+				<button type="button" id="streetFood" class="toggleButton grid-row-half selected" onclick="setPreference('street food')">Street Food</button>
+				<button type="button" id="cheapRestaurants" class="toggleButton grid-row-half" onclick="setPreference('cheap restaurants')">Cheap Restaurants</button>
+				<button type="button" id="party0" class="toggleButton grid-row-third" onclick="setPreference('party0')">Totally Sober</button>
+				<button type="button" id="party1" class="toggleButton grid-row-third selected" onclick="setPreference('party1')">Occasional Drinker</button>
+				<button type="button" id="party2" class="toggleButton grid-row-third" onclick="setPreference('party2')">Party Animal</button>
+		</div>
+
 	</div>
 </body>
 
