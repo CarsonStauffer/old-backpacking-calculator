@@ -26,7 +26,8 @@
 
 .toggleButton {
   margin: 1vh 1vw;
-  height: 8vh;
+  min-height: 15vh;
+  height: auto;
   color: #bcbcbc;
   display: -webkit-flex;
   display: flex;
