@@ -43,7 +43,7 @@ function resize() {
 
   if(width > height) { // Landscape
     $("tr").children().each(function(){ $(this).css({'font-size': '3vw'}) });
-    $("h1").css({'font-size': '4vw'});
+    $("h1").css({'font-size': '4vw', 'margin': '4vh 0'});
     $("button").each(function(){ $(this).css({'font-size': '2vw', 'min-height': '15vh'}) })
     $("#tableContainer").addClass("grid-row-half");
     $("#tableContainer").removeClass("grid-row");
@@ -51,7 +51,7 @@ function resize() {
     $("#controlsContainer").removeClass("grid-row");
   } else { // Portrait
     $("tr").children().each(function(){ $(this).css({'font-size': '5vh'}) });
-    $("h1").css({'font-size': '5vh'});
+    $("h1").css({'font-size': '5vh', 'margin': '2vh 0'});
     $("button").each(function(){ $(this).css({'font-size': '2.5vh', 'min-height': '8vh'}) })
     $("#tableContainer").addClass("grid-row");
     $("#tableContainer").removeClass("grid-row-half");
