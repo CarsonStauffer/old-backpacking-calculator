@@ -6,11 +6,6 @@
 
 .grid-row {
   grid-column: span 6;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
 }
 
 .grid-row-half {
@@ -19,6 +14,14 @@
 
 .grid-row-third {
   grid-column: span 2;
+}
+
+.centered-flex {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .toggleButton {
