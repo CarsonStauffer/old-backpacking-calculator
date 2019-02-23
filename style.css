@@ -82,6 +82,7 @@ td {
   padding: 0 5vw;
 }
 * {
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'Patrick Hand', cursive;
+  font-family: 'Varela Round', sans-serif;
 }
