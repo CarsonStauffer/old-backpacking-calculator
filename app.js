@@ -74,6 +74,7 @@ function generatePricesTable() {
   tbody.append(generatePricesRow("laos"));
   tbody.append(generatePricesRow("malaysia"));
   tbody.append(generatePricesRow("indonesia"));
+  tbody.append(generatePricesRow("philippines"));
   sortTable();
   resize();
 }
