@@ -50,8 +50,8 @@ function resize() {
     $("#controlsContainer").addClass("grid-row-half");
     $("#controlsContainer").removeClass("grid-row");
   } else { // Portrait
-    $("tr").children().each(function(){ $(this).css({'font-size': '5vh'}) });
-    $("h1").css({'font-size': '5vh', 'margin': '2vh 0'});
+    $("tr").children().each(function(){ $(this).css({'font-size': '4vh'}) });
+    $("h1").css({'font-size': '4vh', 'margin': '2vh 0'});
     $("button").each(function(){ $(this).css({'font-size': '2.5vh', 'min-height': '8vh'}) })
     $("#tableContainer").addClass("grid-row");
     $("#tableContainer").removeClass("grid-row-half");
