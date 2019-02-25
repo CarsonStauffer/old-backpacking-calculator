@@ -104,6 +104,10 @@ td {
   font-family: 'Varela Round', sans-serif;
 }
 
+#controlsContainer {
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
 #tableContainer {
   display: -webkit-flex;
   display: flex;
