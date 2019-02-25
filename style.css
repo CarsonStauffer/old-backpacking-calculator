@@ -94,10 +94,14 @@ tbody {
   display: block;
   overflow: auto;
   height: auto;
+  border-spacing: 0;
 }
 td {
   text-align: left;
   padding: 0 5vw;
+}
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
 }
 * {
   font-weight: normal;
