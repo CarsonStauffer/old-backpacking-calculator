@@ -91,6 +91,11 @@ h1 {
 table {
   margin: 4vh 0;
 }
+tbody {
+  display: block;
+  overflow: auto;
+  height: auto;
+}
 td {
   text-align: left;
   padding: 0 5vw;

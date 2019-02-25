@@ -40,6 +40,7 @@ function clearTable() {
 function resize() {
   var width = window.innerWidth;
   var height = window.innerHeight;
+  var vh = $(document).height() / 100;
 
   if(width > height) { // Landscape
     $("tr").children().each(function(){ $(this).css({'font-size': '3vw'}) });
@@ -49,6 +50,7 @@ function resize() {
     $("#tableContainer").removeClass("grid-row");
     $("#controlsContainer").addClass("grid-row-half");
     $("#controlsContainer").removeClass("grid-row");
+    $("tbody").css({'height': 'auto'});
   } else { // Portrait
     $("tr").children().each(function(){ $(this).css({'font-size': '4vh'}) });
     $("h1").css({'font-size': '4vh', 'margin': '2vh 0'});
@@ -57,6 +59,7 @@ function resize() {
     $("#tableContainer").removeClass("grid-row-half");
     $("#controlsContainer").addClass("grid-row");
     $("#controlsContainer").removeClass("grid-row-half");
+    $("tbody").css({'height': (85 * vh - $("#controlsContainer").outerHeight(true) - $("#title").outerHeight(true))});
   }
 }
 
